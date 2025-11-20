@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# Conference Ticket Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una solución al [Conference Ticket Generator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/conference-ticket-generator-oq5gFIU12w).
 
-Currently, two official plugins are available:
+![Demo1](/demo_1.png)
+![Demo2](/demo_2.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## React Compiler
+Los usuarios pueden:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Completar el formulario con sus datos
+- Recibir mensajes de validación del formulario si:
+  - Falta algún campo
+  - La dirección de correo no tiene el formato correcto
+  - La imagen del avatar es demasiado grande o tiene un formato incorrecto
+- Completar el formulario usando únicamente el teclado
+- Escuchar, mediante el lector de pantalla, los inputs, ayudas de los campos y mensajes de error
+- Ver el ticket de conferencia generado cuando envían el formulario correctamente
+- Ver el diseño óptimo de la interfaz dependiendo del tamaño de pantalla de su dispositivo
+- Ver los estados hover y focus de todos los elementos interactivos de la página
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- VITE
+- TYPESCRIPT
+- TAILWIND
+- ZUSTAND
+- REACT
+- REACT HOOK FORM
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Explicación en video
+[![Ver el video](https://img.youtube.com/vi/5Qlm5pAwlbk/0.jpg)](https://www.youtube.com/watch?v=5Qlm5pAwlbk)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Usefull commands
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `npm install` - Instalar dependencias  
+- `npm run dev` - Iniciar servidor de desarrollo  
+- `npm run build` - Crear build para producción  
+- `npm run preview` - Previsualizar build de producción  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Author
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+David Ruiz - Frontend Developer
+- [Github](https://github.com/Davichobits)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/Davichobits) 
+- [Linkedin](https://www.linkedin.com/in/davidirc/)
+- [YouTube](https://www.youtube.com/CodingTube)
+- [codingtube.dev](https://codingtube.dev/)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**¿Buscas clases particulares conmigo?** haz clic [aquí](https://www.classgap.com/es/tutor/david-577169):
+
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=codingithub/codingithub@github)](https://gitads.dev/v1/ad-track?source=codingithub/codingithub@github)
